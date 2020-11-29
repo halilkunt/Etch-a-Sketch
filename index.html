@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="https://kit.fontawesome.com/dab81928ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="button-container">
+            <a href="#" class="brush red" data-color="red">Red <i class="fas fa-paint-brush"></i></a>
+            <a href="#" class="brush blue" data-color="blue">Blue <i class="fas fa-paint-brush"></i></a>
+            <a href="#" class="brush random" data-color="random">Random <i class="fas fa-paint-brush"></i></a>
+            <a href="#" class="erase">Eraser<i class="fas fa-eraser"></i></a>
+
+            <div class="color-picker">
+                <label for="favcolor" class="color-picker-label">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#000000" data-color="#000000">
+            </div>
+        </div>
+
+        <div class="grid-container">
+
+        </div>
+
+        <div class="grid-box-size">
+            <label for="grid-size">Choose vertical box number between 1 and 50 :</label>
+            <input type="range" id="grid-size" name="grid-size" min="1" max="50" value="16">
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
